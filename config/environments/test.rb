@@ -32,3 +32,4 @@ config.gem "rspec", :lib => 'spec'
 config.gem "factory_girl"
 config.gem "cucumber", :version => ">= 0.6.1"
 config.gem "cucumber-rails", :version => ">= 0.2.3"
+config.gem "capybara"
