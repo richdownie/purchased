@@ -29,3 +29,4 @@ config.action_mailer.delivery_method = :test
 
 config.gem "rspec"
 config.gem "rspec-rails"
+config.gem "factory_girl"
