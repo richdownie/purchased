@@ -30,4 +30,5 @@ config.action_mailer.delivery_method = :test
 config.gem "rspec-rails", :lib => 'spec/rails'
 config.gem "rspec", :lib => 'spec'
 config.gem "factory_girl"
-config.gem "cucumber"
+config.gem "cucumber", :version => ">= 0.6.1"
+config.gem "cucumber-rails", :version => ">= 0.2.3"
