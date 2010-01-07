@@ -32,7 +32,7 @@ end
 #   describe "default" do
 #     attr_reader :model
 #     before do
-#       @model = Factory.build(:workout_program)
+#       @model = Factory.build(:user)
 #     end
 # 
 #     it "should not be nil" do
