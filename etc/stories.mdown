@@ -1,0 +1,32 @@
+# v1 user stories
+
+* we need user accounts
+* user can upload an image of a receipt
+* user can tag receipts
+* user can attach warranty meta-data to a receipt
+    * date of purchase
+    * price
+    * purchase location (store)
+
+
+
+# data model
+
+* users
+* profile
+* purchases
+    * image\_url
+    * email\_body
+* taggings
+* tags
+
+# v??? features
+
+* price comparisons vs. national average
+* purchase history
+* user can forward an email to store
+* other attributes ...
+    * expiration date
+    * contact number
+    * website
+* ratings & reviews
