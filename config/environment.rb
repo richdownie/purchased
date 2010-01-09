@@ -14,7 +14,7 @@ Rails::Initializer.run do |config|
   config.gem "rspec", :lib => 'spec'
   config.gem "factory_girl"
   config.gem "cucumber", :version => ">= 0.6.1"
-  config.gem "cucumber-rails", :version => ">= 0.2.3"
+  config.gem "cucumber-rails", :lib => false, :version => ">= 0.2.3"
   config.gem "capybara"
   config.gem "database_cleaner"
   
