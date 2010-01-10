@@ -15,4 +15,15 @@ describe Purchase do
       end
     end
   end  
+  
+  describe "Queries" do
+    it "should find all purchases" do
+      @user = Factory.build(:user)
+      10.times do
+        Purchase.create(:name => "item" + rand(9999).to_s, :user_id => @user)
+      end
+      purchases = Purchase.count
+      purchases.should == 10
+    end
+  end
 end
