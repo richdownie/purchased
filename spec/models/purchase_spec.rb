@@ -8,6 +8,11 @@ describe Purchase do
         purchase.should_not be_valid
         purchase.errors_on(:name).should_not be_blank
       end
+      it "should be valid with purchase name" do
+        purchase = Factory.build(:purchase)
+        purchase.should be_valid
+        purchase.errors_on(:name).should be_blank
+      end
     end
   end  
 end
