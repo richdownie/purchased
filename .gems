@@ -1,0 +1,7 @@
+authlogic  
+rspec-rails  
+factory_girl  
+cucumber  >= 0.4.4
+cucumber-rails  >= 0.2.3
+capybara  
+database_cleaner  
