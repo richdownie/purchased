@@ -22,8 +22,8 @@ describe Purchase do
       10.times do
         Purchase.create(:name => "item" + rand(9999).to_s, :user_id => @user)
       end
-      purchases = Purchase.count
-      purchases.should == 10
+      purchases = Purchase.find:all
+      purchases.count.should == 10
     end
   end
 end

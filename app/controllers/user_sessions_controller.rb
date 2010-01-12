@@ -4,10 +4,11 @@ class UserSessionsController < ApplicationController
   end
 
   def create
+    @user = current_user
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = "Successfully logged in."
-      redirect_to root_url
+      redirect_to purchases_path
     else
       render :action => 'new'
     end
