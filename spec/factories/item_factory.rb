@@ -1,4 +1,4 @@
-Factory.define :purchase do |p|
+Factory.define :item do |p|
   p.name "foo"
   p.association :user
 end

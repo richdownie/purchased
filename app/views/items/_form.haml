@@ -1,4 +1,4 @@
-- form_for @purchase do |f|
+- form_for @item do |f|
   = f.error_messages
   %p
     = f.label :name
@@ -12,5 +12,15 @@
     = f.label :notes
     %br
     = f.text_field :notes
+  %p	
+  %p
+    = f.label :warranty_years
+    %br
+    = f.text_field :warranty_years
+  %p	
+  %p
+    = f.label :warranty_months
+    %br
+    = f.text_field :warranty_months
   %p
     = f.submit "Submit"
