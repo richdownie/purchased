@@ -8,6 +8,13 @@ describe ItemsController do
         item = Factory.build(:user)
         get :index
       end
+    context "when logged in a a user" do
+      before do
+        @user = Factory.build(:user)
+        
+        get :index
+      end
+
       it "should be successful" do
         response.should be_success
         response.should render_template('index')
