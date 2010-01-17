@@ -5,13 +5,8 @@ describe ItemsController do
     integrate_views
     context "when logged in as a user" do
       before do
-        item = Factory.build(:user)
-        get :index
-      end
-    end  
-    context "when logged in a a user" do
-      before do
-        @user = Factory.build(:user)
+        @user = Factory.create(:user)
+        UserSession.create(users(@user))
         
         get :index
       end
