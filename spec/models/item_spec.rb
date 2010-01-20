@@ -15,7 +15,7 @@ describe Item do
       end
     end
   end  
-  
+
   describe "Queries" do
     it "should find all items" do
       @user = Factory.build(:user)
@@ -24,6 +24,26 @@ describe Item do
       end
       items = Item.find:all
       items.count.should == 10
+    end
+  end
+
+  describe "Factories" do
+    it ".build" do
+      item = Factory.build(:item)
+      item.new_record?
+    end
+    it ".create" do
+      item = Factory.create(:item)
+      item.new_record?
+    end
+    it ".attributes_for" do
+      item = Factory.attributes_for(:item)
+      item.new_record?
+    end
+    it ".stub" do
+      item = Factory.stub(:item)
+      item.new_record?
+      p item.notes
     end
   end
 end
