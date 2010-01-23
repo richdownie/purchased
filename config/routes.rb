@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.home "home", :controller => "home"
 
-  map.root :users
+  map.root :controller => "user_sessions", :action => "new"
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
