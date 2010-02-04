@@ -1,0 +1,14 @@
+<% form_for @item do |f| %>
+  <%= f.label :name, 'Name' %>:
+  <%= f.text_field :name %><br />
+  <%= f.label :price, 'Price' %>:
+  <%= f.text_field :price %><br />
+  <%= f.label :purchased_on, 'Purchase Date' %>:
+  <%= f.text_field :purchased_on %><br />
+  <%= f.label :warranty_years, 'Warranty (Years)' %>:
+  <%= f.text_field :warranty_years %><br />
+  <%= f.label :warranty_months, 'Warranty (Months)' %>:
+  <%= f.text_field :warranty_months %><br />
+  <%= f.label :notes, 'Notes' %>:
+  <%= f.text_area :notes %><br />
+<% end %>
