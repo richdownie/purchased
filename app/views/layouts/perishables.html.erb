@@ -10,7 +10,7 @@
 <body>
 
 <p style="color: green"><%= flash[:notice] %></p>
-
+<%= link_to "Logout", :controller => 'user_sessions', :action => 'destroy' %>
 <%= yield %>
 
 </body>
