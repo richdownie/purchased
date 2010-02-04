@@ -1,0 +1,30 @@
+<h1>Listing perishables</h1>
+
+<table>
+  <tr>
+    <th>What</th>
+    <th>When</th>
+    <th>Where</th>
+    <th>Warranty months</th>
+    <th>Warranty years</th>
+    <th>How much</th>
+  </tr>
+
+<% @perishables.each do |perishable| %>
+  <tr>
+    <td><%=h perishable.what %></td>
+    <td><%=h perishable.when %></td>
+    <td><%=h perishable.where %></td>
+    <td><%=h perishable.warranty_months %></td>
+    <td><%=h perishable.warranty_years %></td>
+    <td><%=h perishable.how_much %></td>
+    <td><%= link_to 'Show', perishable %></td>
+    <td><%= link_to 'Edit', edit_perishable_path(perishable) %></td>
+    <td><%= link_to 'Destroy', perishable, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New perishable', new_perishable_path %>

@@ -1,0 +1,33 @@
+<p>
+  <b>What:</b>
+  <%=h @perishable.what %>
+</p>
+
+<p>
+  <b>When:</b>
+  <%=h @perishable.when %>
+</p>
+
+<p>
+  <b>Where:</b>
+  <%=h @perishable.where %>
+</p>
+
+<p>
+  <b>Warranty months:</b>
+  <%=h @perishable.warranty_months %>
+</p>
+
+<p>
+  <b>Warranty years:</b>
+  <%=h @perishable.warranty_years %>
+</p>
+
+<p>
+  <b>How much:</b>
+  <%=h @perishable.how_much %>
+</p>
+
+
+<%= link_to 'Edit', edit_perishable_path(@perishable) %> |
+<%= link_to 'Back', perishables_path %>

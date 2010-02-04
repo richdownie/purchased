@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  what: MyString
+  when: MyString
+  where: MyString
+  warranty_months: 1
+  warranty_years: 1
+  how_much: 1
+
+two:
+  what: MyString
+  when: MyString
+  where: MyString
+  warranty_months: 1
+  warranty_years: 1
+  how_much: 1

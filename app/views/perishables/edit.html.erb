@@ -1,0 +1,36 @@
+<h1>Editing perishable</h1>
+
+<% form_for(@perishable) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :what %><br />
+    <%= f.text_field :what %>
+  </p>
+  <p>
+    <%= f.label :when %><br />
+    <%= f.text_field :when %>
+  </p>
+  <p>
+    <%= f.label :where %><br />
+    <%= f.text_field :where %>
+  </p>
+  <p>
+    <%= f.label :warranty_months %><br />
+    <%= f.text_field :warranty_months %>
+  </p>
+  <p>
+    <%= f.label :warranty_years %><br />
+    <%= f.text_field :warranty_years %>
+  </p>
+  <p>
+    <%= f.label :how_much %><br />
+    <%= f.text_field :how_much %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @perishable %> |
+<%= link_to 'Back', perishables_path %>
