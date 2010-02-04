@@ -1,8 +1,0 @@
-<%= render :partial => 'actions' %>
-<h2>Items</h2>
-<ul>
-  <% @items.each do |i| %>
-  <li><%= link_to "Item", edit_item_path(i.id) %></li>
-  <% end %>
-</ul>
-
