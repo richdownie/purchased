@@ -1,7 +1,0 @@
-= render :partial => 'actions'
-%h2 Items
-%ul
-- @items.each do |i|
-  %li= i.name
-/  %li= link_to 'Edit', edit_item_path(i.id)
-= link_to 'Add', new_item_path
