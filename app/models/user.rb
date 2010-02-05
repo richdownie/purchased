@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
   acts_as_authentic
   
-  has_many :items
+  has_many :perishables
 end

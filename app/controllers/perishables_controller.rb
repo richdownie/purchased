@@ -3,11 +3,6 @@ class PerishablesController < ApplicationController
   # GET /perishables.xml
   def index
     @perishables = Perishable.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @perishables }
-    end
   end
 
   # GET /perishables/1

@@ -1,0 +1,12 @@
+
+
+<ul>
+	<% for perishable in @perishables %>
+	  <li class="arrow">
+		  <%= link_to h(perishable.what), perishable %>
+		  <small class="counter"><%= perishable.how_much %></small>
+		</li>
+	<% end %>
+</ul>
+
+<lu><li class="arrow"><%= link_to "New Perishable", new_perishable_path %></li></ul>

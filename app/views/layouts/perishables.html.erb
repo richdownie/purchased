@@ -6,12 +6,20 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Perishables: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'mobile' if mobile_device? %>
 </head>
 <body>
-
+<div id="container">
+	<p>
+		<% if mobile_device? %>
+		  <%= link_to "Full Site", :mobile => 0 %>
+		<% else %>
+		  <%= link_to "Mobile Site", :mobile => 1 %>
+		<% end %>
+	</p>
 <p style="color: green"><%= flash[:notice] %></p>
 <%= link_to "Logout", :controller => 'user_sessions', :action => 'destroy' %>
 <%= yield %>
-
+</div>
 </body>
 </html>

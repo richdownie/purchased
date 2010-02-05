@@ -1,0 +1,9 @@
+
+<ul>
+  <% for perishable in @perishable %>
+    <li class="arrow"><%= link_to h(perishable.what), perishable_path(perishable) %></li>
+	    <li class="arrow"><%= perishable.when %></li>
+  <% end %>
+</ul>
+ 
+<ul><li class="arrow"><%= link_to "New Task", new_task_path(:project_id => @project) %></li></ul>
